@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 660px) {
+    #burguer {
+        display: none;
+    }
+
+    menu.itens {
+        display: block;
+    }
+
+    .bloco-navegacao {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+    }
+
+    .bloco-menu,
+    .bloco-secao {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: start;
+    }
+
+    .lista-menu > a,
+    .lista-secao > a {
+        width: auto;
+        font-size: 0.8em;
+    }
+}

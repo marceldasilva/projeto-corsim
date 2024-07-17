@@ -1,0 +1,97 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*Alinhando o login ao centro com flexbox*/
+main {
+    background: #1C51FF;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login {
+    background: rgba(255, 255, 255, 0.194);
+    width: 250px;
+    height: 450px;
+    overflow: hidden;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.284);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.492);
+    transition: width .3s, heigth .3s;
+    transition-timing-function: ease;
+}
+
+.imagem {
+    background: url('../imagem/tela-de-login.jpg');
+    width: 250px;
+    height: 170px;
+}
+
+h1 {
+    margin-top: 10px;
+    font-size: 1.8em;
+}
+
+p {
+    margin-top: 5px;
+    font-size: 0.9em;
+}
+
+h1,
+p {
+    color: white;
+    text-align: center;
+}
+
+.email,
+.senha {
+    padding: 5px;
+}
+
+#iemail,
+#isenha {
+    width: 90%;
+    background-color: rgba(255, 255, 255, 0.624);
+    outline: none;
+    padding: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.711);
+    border-radius: 20px;
+}
+
+#iemail:focus,
+#isenha:focus {
+    background-color: white;
+}
+
+#iemail:hover,
+#isenha:hover {
+    outline: none;
+    background-color: white;
+}
+
+.indicadores {
+    color: white;
+    font-weight: 500;
+}
+
+.botao {
+    display: block;
+    margin: auto;
+    background: #0D3FE0;
+    color: white;
+    font-size: 1.4em;
+    width: 80%;
+    height: 50px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.353);
+    cursor: pointer;
+}
