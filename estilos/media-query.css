@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-@media screen and (min-width: 660px) {
+@media screen and (min-width: 790px) {
     #burguer {
         display: none;
     }
@@ -13,6 +13,7 @@
         display: flex;
         flex-flow: row wrap;
         justify-content: space-between;
+        padding: 10px;
     }
 
     .bloco-menu,
@@ -20,11 +21,43 @@
         display: flex;
         flex-flow: row nowrap;
         justify-content: start;
+        flex-grow: 100%;
     }
 
     .lista-menu > a,
     .lista-secao > a {
         width: auto;
         font-size: 0.8em;
+        border-radius: 5px;
+    }
+
+    .bloco-parcerias {
+        display: flex;
+        flex-flow: column nowrap;
+    }
+
+    .bloco-imagens {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    main.conteudo-principal {
+        max-width: 1000px;
+    }
+
+    .lista-menu > a,
+    .lista-secao > a {
+        font-size: 1em;
+        border-radius: 5px;
+    }
+    
+    h1.titulo-principal {
+        font-size: 2em;
+    }
+
+    p {
+        font-size: 1em;
     }
 }

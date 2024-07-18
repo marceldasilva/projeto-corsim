@@ -106,12 +106,13 @@ p {
 
 .bloco-parcerias {
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: column wrap;
 }
 
 .bloco-imagens {
     display: flex;
     flex-flow: row nowrap;
+    justify-content: space-between;
 }
 
 .bloco-imagens > a > img {
