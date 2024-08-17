@@ -1,16 +1,40 @@
-function logar() {
-    const email = document.getElementById("iemail")
-    const senha = document.getElementById("isenha")
+const email = document.querySelector("#iemail");
+const senha = document.querySelector("#isenha");
+const botaoLogin = document.querySelector(".botao");
 
-    if (email.value.length == 0 || senha.value.length == 0) {
-        alert('Ambos campos devem estar preenchidos.')
-    } else if (email.value.length < 4 || email.value.length > 25) {
-        alert('O campo email não tem caracteres o suficiente.')
-    } else if (email.value.indexOf("@") == -1) {
-        alert('O email deve conter "@".')
-    } else if (senha.value.length < 8) {
-        alert('A senha deve ter no mínimo 8 caracteres.')
+botaoLogin.addEventListener('click', () => {
+    validaFormulario();
+})
+
+window.addEventListener('keypress', (e) => {
+    if (e.key === 'Enter') {
+        validaFormulario();
+    }
+})
+
+function validaEmail() {
+    const regex = /^\w+\@gmail+\.com+$/;
+    if (regex.test(email.value)) {
+        console.log(email.value);
     } else {
-        window.location = "index.html"
+        throw new Error("O email informado não é válido.");
+    }
+}
+
+function validaSenha() {
+    const regex = /^(?=.*[0-9])(?=.*[A-Z])(?=.*[a-z])(?=.*[@!_#&]).{8,20}$/;
+    if (regex.test(senha.value)) {
+        console.log(senha.value);
+    } else {
+        throw new Error("A senha informada não é válida.");
+    }
+}
+
+function validaFormulario() {
+    try {
+        validaEmail();
+        validaSenha();
+    } catch(erro) {
+        alert(`${erro}`);
     }
 }

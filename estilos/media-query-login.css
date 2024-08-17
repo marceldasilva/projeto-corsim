@@ -3,7 +3,7 @@
 @media screen and (min-width: 768px) {
     /*Alinhando o login ao centro com flexbox*/
     main {
-    background: url('../imagem/tela-de-login-montanhas.jpg');
+    background: url('../imagens/tela-de-login-montanhas.jpg');
     background-position: center bottom;
     background-repeat: no-repeat;
     width: 100vw;
@@ -27,7 +27,7 @@
     }
 
     .imagem {
-        background: url('../imagem/tela-de-login.jpg');
+        background: url('../imagens/tela-de-login.jpg');
         background-position: top center;
         width: 40%;
         height: 100%;
@@ -86,7 +86,7 @@
 @media screen and (min-width: 992px) {
     /*Alinhando o login ao centro com flexbox*/
     main {
-        background: url('../imagem/tela-de-login-montanhas.jpg');
+        background: url('../imagens/tela-de-login-montanhas.jpg');
         background-position: center bottom;
         background-repeat: no-repeat;
         width: 100vw;
@@ -111,7 +111,7 @@
     }
 
     .imagem {
-        background: url('../imagem/tela-de-login.jpg');
+        background: url('../imagens/tela-de-login.jpg');
         background-position: top center;
         width: 50%;
         height: 100%;
